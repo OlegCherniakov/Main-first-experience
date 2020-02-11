@@ -65,9 +65,6 @@
 
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
           <div class="cards">
-          <!-- Надо исправить:
-            По всему блоку cards: cards__title должны быть заголовками / исправил
-          -->
             <div class="cards__item">
               <img
                 src="images/images_sprint-2/attention.png"
@@ -189,9 +186,6 @@
 
           <div class="table">
             <div class="table__cell">
-              <!-- Надо исправить:
-                По всей таблице: table__heading должны быть заголовками. /исправил
-              -->
               <h3 class="table__heading">86 миллиардов</h3>
 
               <p class="table__text">Число нейронов в мозге человека</p>
@@ -245,7 +239,7 @@
             </div>
           </div>
         </section>
-       
+
         <section class="khan">
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
@@ -280,11 +274,6 @@
           </p>
 
           <div class="table table_theme_dark">
-              <!-- Надо исправить:
-                По всей таблице: 
-                1. table__heading должны быть заголовками /исправил
-                2. table__text должны быть размечены параграфами/ исправил
-              -->
             <div class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">
                 1
@@ -297,10 +286,6 @@
               <h3 class="table__heading table__heading_theme_dark">
                 2
               </h3>
-              <!-- Надо исправить: 
-                Класс не соответствует БЭМ. Не хватает класса от которого образован модификатор/ иправил
-                Придерживайтесь схемы: "block__element block__element_mod_value"
-              -->
               <p class="table__text table__text_theme_dark">
                 Сосредоточтесь на каком-то одном навыке.
               </p>
@@ -317,10 +302,6 @@
               <h3 class="table__heading table__heading_theme_dark">
                 4
               </h3>
-              <!-- Надо исправить: 
-                Класс не соответствует БЭМ. Не хватает класса от которого образован модификатор/ исправил
-                Придерживайтесь схемы: "block__element block__element_mod_value"
-              -->
               <p class="table__text table__text_theme_dark">
                 Разбейте навык на элементы.
               </p>
@@ -389,59 +370,66 @@
           <ul class="resourses__logo-zone">
             <li class="resourses__logo">
               <a href="#" class="resources__link">
-                <img src="images/images_sprint-2/logo/arzamas.svg" alt="&#34;Arzamas&#34;" class="resourses__image">
+                <img
+                  src="images/images_sprint-2/logo/arzamas.svg"
+                  alt="&#34;Arzamas&#34;"
+                  class="resourses__image"
+                />
               </a>
             </li>
             <li class="resourses__logo">
               <a href="#" class="resources__link">
-                <img src="images/images_sprint-2/logo/n1.svg" alt="&#34;N + 1&#34;" class="resourses__image">
+                <img
+                  src="images/images_sprint-2/logo/n1.svg"
+                  alt="&#34;N + 1&#34;"
+                  class="resourses__image"
+                />
               </a>
             </li>
             <li class="resourses__logo">
               <a href="#" class="resources__link">
-                <img src="images/images_sprint-2/logo/strelka.svg" alt="&#34;strelka&#34;" class="resourses__image">
+                <img
+                  src="images/images_sprint-2/logo/strelka.svg"
+                  alt="&#34;strelka&#34;"
+                  class="resourses__image"
+                />
               </a>
             </li>
             <li class="resourses__logo">
               <a href="#" class="resources__link">
-                <img src="images/images_sprint-2/logo/polka.svg" alt="&#34;Полка&#34;" class="resourses__image">
+                <img
+                  src="images/images_sprint-2/logo/polka.svg"
+                  alt="&#34;Полка&#34;"
+                  class="resourses__image"
+                />
               </a>
             </li>
           </ul>
-          <!-- Надо исправить:
-            1. По смыслу это должны быть ссылки на ресурсы, оберните img в ссылки(не забудьте также эффекты при наведении)/ исправил
-            2. Однотипные элементы нужно оборачивать в список, для resources__logo-zone используйте ul вместо div/ исправил
-             <img
-              src="/images/images_sprint-2/logo/arzamas.svg"
-              class="resources__logo"
-              alt="Arzamas"
-            />
-          -->
         </section>
       </main>
       <footer class="footer">
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">
             <div class="logo logo_place_footer"></div>
-            <h4 class="footer__author">© 2020. Олег Черняков.</h4>
-            <!-- Надо исправить: Данный элемент содержит текстовый контент, использование DIV - некорректное решение. -->
+            <p class="footer__author">&copy; 2020. Олег Черняков.</p>
           </div>
           <div class="footer__column footer__column_content_info">
             <h2 class="footer__colum-heading">О Практикуме</h2>
 
             <ul class="footer__column-links">
               <li class="footer__column-list">
-                <a href="#" class="column-links">Главная</a>
+                <a href="#" class="footer__column-link">Главная</a>
               </li>
               <li class="footer__column-list">
-                <a href="#" class="column-links">Концепция</a>
+                <a href="#" class="footer__column-link">Концепция</a>
               </li>
               <li class="footer__column-list">
-                <a href="#" class="column-links">Наставники</a>
+                <a href="#" class="footer__column-link">Наставники</a>
               </li>
             </ul>
             <!-- Надо исправить:
-              Класс ссылок не соответствует БЭМ, используйте класс footer__column-link
+              Видимо невнимательно прочитали:( Класс footer__column-link нужно задать ссылкам (тег <a>) /corrected
+              А ul нужно вернуть класс footer__column-links /corrected
             -->
           </div>
           <div class="footer__column footer__column_content_social">
@@ -449,10 +437,10 @@
 
             <ul class="footer__column-links">
               <li class="footer__column-list">
-                <a href="https://fasebook.com/" class="column-links"
+                <a href="https://fasebook.com/" class="footer__column-link"
                   ><img
                     src="images/facebook_white.svg"
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     alt="Facebook"
                   />
                   Facebook</a
@@ -460,10 +448,10 @@
               </li>
 
               <li class="footer__column-list">
-                <a href="https://vk.com/" class="column-links"
+                <a href="https://vk.com/" class="footer__column-link"
                   ><img
                     src="images/vk_white.svg"
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     alt="VK"
                   />
                   ВКонтакте</a
@@ -471,20 +459,20 @@
               </li>
 
               <li class="footer__column-list">
-                <a href="https://www.instagram.com/" class="column-links"
+                <a href="https://www.instagram.com/" class="footer__column-link"
                   ><img
                     src="images/instagram_white.svg"
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     alt="Instagram"
                   />
                   Instagram</a
                 >
               </li>
+              <!-- Надо исправить:
+                Видимо невнимательно прочитали:( Класс footer__column-link нужно задать ссылкам (тег <a>) /corrected
+                А ul нужно вернуть класс footer__column-links //corrected
+              -->
             </ul>
-            <!-- Надо исправить:
-              1. Класс ссылок не соответствует БЭМ, используйте класс footer__column-link
-              2. Класс img должен быть в единственном числе: footer__social-icon
-            -->
           </div>
         </div>
       </footer>
@@ -492,47 +480,19 @@
   </body>
 </html>
 
-
 <!--Резюме по работе:
 
-  Наша команда приносит извинения, при проверке работы на предыдущем спринте были пропущены ошибки. 
-  Данные исправления необходимо внести, т.к в дальнейшем вы можете столкнуться с проблемами при выполнении заданий и сдачи проектных и дипломной работы.
-  В качестве извинений, вам будет добавлено 2 дня к дате дедлайна.
+  Осталось поправить один момент в футере(в двух местах). Вы молодец, работа очень преобразилась:) //Большое спасибо! Очень приятно от профессионала услышать такую похвальбу!
+  Все Ваши замечания исправил) Надеюсь, it's all?))) 
+  Большая просьба, если с этой контрольной всё ок, напишите пожалуйста, над чем стоит поработать...
 
-  У вас получилась хорошая работа! Что понравилось:
+  Можно лучше:
 
-    - Используете HTML-мнемоники
-    - В некоторых местах были выбраны очень хорошие теги для элементов.
-    - В целом, с БЭМ подходом вы справились.
-    - Верстка очень похожа на макет.
-    - Правильно оформлен head
-  
-  Что надо исправить помимо замечаний в коде:
-
-    - Все текстовые элементы должны быть размечены h1-h6/p, а не div./ иправил
-
-    - ограничивать video__iframes по ширине не очень хорошо, если понадобится добавить еще видео в video__iframes, то верстка сломается/ исправил
-
-    - Обратите внимание, модификаторы используются для того, чтобы видоизменить основной класс.
-    Например, в section-title уже есть определенные стили, и в section-title_theme_dark вам не нужно прописывать их все заново,
-    нужно только указать те, что отличаются. В данном случае это цвет шрифта. Ширину, отступы, размер шрифта и тд заново прописывать не нужно.
-    Проверьте все модификаторы на наличие лишних стилей, оставьте только те стили, что отличаются от их основного класса./ исправил
-
-    - Задайте блоку header свойство overflow со значением hidden, чтобы при изменении высоты экрана синий квадрат не вылезал за пределы header/ исправил
-
-    - cards__image должны быть круглыми/ исправил
-
-    - уберите у видео рамку с помощью свойства border/ исправил
-
-    - Цвет ссылки feinman__link не соответствует брифу(должен быть черный) /исправил
-
-    - .khan__book-pic и resources__logo не отображаются если открывать html-файл в браузере, проверьте пути /исправил
-
-    - Для квадрата следует создать свою анимацию, которая будет начинаться в -15deg, потому что анимация не учитывает трансформации, которые были произведены 
-    ранее и при загрузке страницы квадрат делает скачок с -15 до 0, а уже потом начинает крутиться. /исправил
+    - Эффект по наведению должен быть плавным, используйте transition //corrected
 
   Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
   Комментарии "надо исправить" являются обязательными, только при выполнении всех "надо исправить" работа будет зачтена.
   Пожалуйста, не удаляйте комментарии ревьюера до следующей итерации.
   Для вашего удобства, рекомендую помечать каким-нибудь символом комментарии, которые вы выполнили. Помечаю / иправил
+
 -->
